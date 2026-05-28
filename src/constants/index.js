@@ -16,7 +16,7 @@ export const navLists = ["Our Work", "3D Architecture", "Case Studies", "Start a
 export const hightlightsSlides = [
   {
     id: 1,
-    textLists = [
+    textLists: [
       "We build clean, high-performance web apps.",
       "Smooth 3D graphics that load instantly.",
       "Engineered for high conversion rates.",
@@ -26,7 +26,7 @@ export const hightlightsSlides = [
   },
   {
     id: 2,
-    textLists = [
+    textLists: [
       "Interactive Product Visualization.",
       "Let buyers explore your hardware",
       "right from their browser tab.",
@@ -36,7 +36,7 @@ export const hightlightsSlides = [
   },
   {
     id: 3,
-    textLists = [
+    textLists: [
       "Fluid Motion Design.",
       "Subtle scroll animations that guide users",
       "naturally down the page.",
@@ -46,7 +46,7 @@ export const hightlightsSlides = [
   },
   {
     id: 4,
-    textLists = [
+    textLists: [
       "Ready to scale your platform?",
       "Let's build something unforgettable together.",
     ],
