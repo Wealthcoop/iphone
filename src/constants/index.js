@@ -59,25 +59,25 @@ export const hightlightsSlides = [
 export const models = [
   {
     id: 1,
-    title: "Interactive Web Design Concept: Matte Gold Finish",
+    title: "Matte Gold. Pure Elegance.",
     color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
     img: yellowImg,
   },
   {
     id: 2,
-    title: "Interactive Web Design Concept: Deep Cobalt Finish",
+    title: "Deep Cobalt. Engineered Brilliance.",
     color: ["#53596E", "#6395ff", "#21242e"],
     img: blueImg,
   },
   {
     id: 3,
-    title: "Interactive Web Design Concept: Pearl Ceramic Finish",
+    title: "Pearl Ceramic. Seamless Design.",
     color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
     img: whiteImg,
   },
   {
     id: 4,
-    title: "Interactive Web Design Concept: Carbon Stealth Finish",
+    title: "Carbon Stealth. Dark Mode Defined.",
     color: ["#454749", "#3b3b3b", "#181819"],
     img: blackImg,
   },
