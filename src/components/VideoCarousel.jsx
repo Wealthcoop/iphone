@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 import { useEffect, useRef, useState } from "react";
-
 import { hightlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
 
@@ -29,7 +28,7 @@ const VideoCarousel = () => {
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
       duration: 2,
-      ease: "power2.inOut", // show visualizer https://gsap.com/docs/v3/Eases
+      ease: "power2.inOut", 
     });
 
     // video animation to play the video when it is in the view
@@ -46,6 +45,16 @@ const VideoCarousel = () => {
         }));
       },
     });
+
+    // Animates and reveals text layout lines seamlessly when the slide changes
+    gsap.to(".slide-text-line", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.1, 
+      ease: "power2.out"
+    });
+
   }, [isEnd, videoId]);
 
   useEffect(() => {
@@ -131,23 +140,18 @@ const VideoCarousel = () => {
       case "video-end":
         setVideo((pre) => ({ ...pre, isEnd: true, videoId: i + 1 }));
         break;
-
       case "video-last":
         setVideo((pre) => ({ ...pre, isLastVideo: true }));
         break;
-
       case "video-reset":
         setVideo((pre) => ({ ...pre, videoId: 0, isLastVideo: false }));
         break;
-
       case "pause":
         setVideo((pre) => ({ ...pre, isPlaying: !pre.isPlaying }));
         break;
-
       case "play":
         setVideo((pre) => ({ ...pre, isPlaying: !pre.isPlaying }));
         break;
-
       default:
         return video;
     }
@@ -187,7 +191,7 @@ const VideoCarousel = () => {
 
               <div className="absolute top-12 left-[5%] z-10">
                 {list.textLists.map((text, i) => (
-                  <p key={i} className="md:text-2xl text-xl font-medium">
+                  <p key={i} className="slide-text-line opacity-0 translate-y-5 md:text-2xl text-xl font-medium">
                     {text}
                   </p>
                 ))}
