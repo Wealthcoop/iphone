@@ -9,79 +9,87 @@ import {
   yellowImg,
 } from "../utils";
 
-export const navLists = ["Store", "Mac", "iPhone", "Support"];
+// This updates your navigation bar links with your new Tech World branding
+export const navLists = ["Our Studio", "3D Showcase", "Case Studies", "Hire Tech World"];
 
+// This transforms the video sliders into your agency's feature selling points
 export const hightlightsSlides = [
   {
     id: 1,
     textLists: [
-      "Enter A17 Pro.",
-      "Game‑changing chip.",
-      "Groundbreaking performance.",
+      "We engineer immersive web experiences.",
+      "Game-changing 3D graphics.",
+      "Groundbreaking conversion performance.",
     ],
     video: highlightFirstVideo,
     videoDuration: 4,
   },
   {
     id: 2,
-    textLists: ["Titanium.", "So strong. So light. So Pro."],
+    textLists: [
+      "Dynamic Product Visualization.",
+      "Let customers explore your hardware",
+      "from every single angle, live.",
+    ],
     video: highlightSecondVideo,
     videoDuration: 5,
   },
   {
     id: 3,
     textLists: [
-      "iPhone 15 Pro Max has the",
-      "longest optical zoom in",
-      "iPhone ever. Far out.",
+      "Fluid Motion Design.",
+      "Silky smooth scroll animations",
+      "powered by high-end GSAP technology.",
     ],
     video: highlightThirdVideo,
     videoDuration: 2,
   },
   {
     id: 4,
-    textLists: ["All-new Action button.", "What will yours do?."],
+    textLists: [
+      "Ready to launch your platform?",
+      "Let's build something unforgettable.",
+    ],
     video: highlightFourthVideo,
     videoDuration: 3.63,
   },
 ];
 
+// This changes the text labels directly over the interactive 3D viewer panels
 export const models = [
   {
     id: 1,
-    title: "iPhone 15 Pro in Natural Titanium",
+    title: "Interactive Web Design Concept: Matte Gold Finish",
     color: ["#8F8A81", "#ffe7b9", "#6f6c64"],
     img: yellowImg,
   },
   {
     id: 2,
-    title: "iPhone 15 Pro in Blue Titanium",
+    title: "Interactive Web Design Concept: Deep Cobalt Finish",
     color: ["#53596E", "#6395ff", "#21242e"],
     img: blueImg,
   },
   {
     id: 3,
-    title: "iPhone 15 Pro in White Titanium",
+    title: "Interactive Web Design Concept: Pearl Ceramic Finish",
     color: ["#C9C8C2", "#ffffff", "#C9C8C2"],
     img: whiteImg,
   },
   {
     id: 4,
-    title: "iPhone 15 Pro in Black Titanium",
+    title: "Interactive Web Design Concept: Carbon Stealth Finish",
     color: ["#454749", "#3b3b3b", "#181819"],
     img: blackImg,
   },
 ];
 
 export const sizes = [
-  { label: '6.1"', value: "small" },
-  { label: '6.7"', value: "large" },
+  { label: 'Standard Layout', value: "small" },
+  { label: 'Ultra-Wide Screen', value: "large" },
 ];
 
 export const footerLinks = [
   "Privacy Policy",
-  "Terms of Use",
-  "Sales Policy",
-  "Legal",
-  "Site Map",
+  "Terms of Service",
+  "Contact Sales",
 ];
