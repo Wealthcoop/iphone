@@ -10,45 +10,45 @@ import {
 } from "../utils";
 
 // This updates your navigation bar links with your new Tech World branding
-export const navLists = ["Our Studio", "3D Showcase", "Case Studies", "Hire Tech World"];
+export const navLists = ["Our Work", "3D Architecture", "Case Studies", "Start a Project"];
 
 // This transforms the video sliders into your agency's feature selling points
 export const hightlightsSlides = [
   {
     id: 1,
-    textLists: [
-      "We engineer immersive web experiences.",
-      "Game-changing 3D graphics.",
-      "Groundbreaking conversion performance.",
+    textLists = [
+      "We build clean, high-performance web apps.",
+      "Smooth 3D graphics that load instantly.",
+      "Engineered for high conversion rates.",
     ],
     video: highlightFirstVideo,
     videoDuration: 4,
   },
   {
     id: 2,
-    textLists: [
-      "Dynamic Product Visualization.",
-      "Let customers explore your hardware",
-      "from every single angle, live.",
+    textLists = [
+      "Interactive Product Visualization.",
+      "Let buyers explore your hardware",
+      "right from their browser tab.",
     ],
     video: highlightSecondVideo,
     videoDuration: 5,
   },
   {
     id: 3,
-    textLists: [
+    textLists = [
       "Fluid Motion Design.",
-      "Silky smooth scroll animations",
-      "powered by high-end GSAP technology.",
+      "Subtle scroll animations that guide users",
+      "naturally down the page.",
     ],
     video: highlightThirdVideo,
     videoDuration: 2,
   },
   {
     id: 4,
-    textLists: [
-      "Ready to launch your platform?",
-      "Let's build something unforgettable.",
+    textLists = [
+      "Ready to scale your platform?",
+      "Let's build something unforgettable together.",
     ],
     video: highlightFourthVideo,
     videoDuration: 3.63,
